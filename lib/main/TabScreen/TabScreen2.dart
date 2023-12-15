@@ -128,7 +128,6 @@ class TabScreen2 extends StatelessWidget {
                       ),
                       child: InkWell(
                         onTap: () {
-                          // 자연 과학 계열 사이트로 이동하는 링크를 여기에 추가
                           _launchURL('https://www.riss.kr/index.do');
                         },
                         child: const Padding(

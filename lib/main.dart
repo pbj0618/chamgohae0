@@ -79,8 +79,8 @@ class _MyAppState extends State<MyApp> {
               label: '홈',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.bookmark),
-              label: '북마크',
+              icon: Icon(Icons.shortcut),
+              label: '바로가기',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.more_horiz),
