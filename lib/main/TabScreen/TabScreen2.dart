@@ -4,14 +4,7 @@ import 'package:url_launcher/url_launcher.dart';
 class TabScreen2 extends StatelessWidget {
   const TabScreen2({super.key, Key});
 
-  // 함수를 사용하여 링크를 여러 곳에서 재사용할 수 있습니다.
-  void _launchURL(String url) async {
-    if (await canLaunch(url)) {
-      await launch(url);
-    } else {
-      throw 'Could not launch $url';
-    }
-  }
+
 
   @override
   Widget build(BuildContext context) {
@@ -56,8 +49,8 @@ class TabScreen2 extends StatelessWidget {
                       ),
                       child: InkWell(
                         onTap: () {
-                          // 기초 자료 사이트로 이동하는 링크를 여기에 추가
-                          _launchURL('https://www.dbpia.co.kr/');
+                          final uri = Uri.parse('https://www.dbpia.co.kr/');
+                          launchUrl(uri);
                         },
                         child: const Padding(
                           padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 30.0),
@@ -92,8 +85,8 @@ class TabScreen2 extends StatelessWidget {
                       ),
                       child: InkWell(
                         onTap: () {
-                          // 인문 사회 계열 사이트로 이동하는 링크를 여기에 추가
-                          _launchURL('https://scholar.google.co.kr/');
+                          final uri = Uri.parse('https://scholar.google.co.kr/');
+                          launchUrl(uri);
                         },
                         child: const Padding(
                           padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 30.0),
@@ -128,7 +121,8 @@ class TabScreen2 extends StatelessWidget {
                       ),
                       child: InkWell(
                         onTap: () {
-                          _launchURL('https://www.riss.kr/index.do');
+                          final uri = Uri.parse('https://www.riss.kr/index.do');
+                          launchUrl(uri);
                         },
                         child: const Padding(
                           padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 30.0),
@@ -163,8 +157,8 @@ class TabScreen2 extends StatelessWidget {
                       ),
                       child: InkWell(
                         onTap: () {
-                          // 자연 과학 계열 사이트로 이동하는 링크를 여기에 추가
-                          _launchURL('https://kiss.kstudy.com');
+                          final uri = Uri.parse('https://kiss.kstudy.com');
+                          launchUrl(uri);
                         },
                         child: const Padding(
                           padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 30.0),
@@ -199,8 +193,8 @@ class TabScreen2 extends StatelessWidget {
                       ),
                       child: InkWell(
                         onTap: () {
-                          // 자연 과학 계열 사이트로 이동하는 링크를 여기에 추가
-                          _launchURL('https://dl.nanet.go.kr/');
+                          final uri = Uri.parse('https://dl.nanet.go.kr/');
+                          launchUrl(uri);
                         },
                         child: const Padding(
                           padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 30.0),
@@ -235,8 +229,8 @@ class TabScreen2 extends StatelessWidget {
                       ),
                       child: InkWell(
                         onTap: () {
-                          // 자연 과학 계열 사이트로 이동하는 링크를 여기에 추가
-                          _launchURL('https://www.dlibrary.go.kr/');
+                          final uri = Uri.parse('https://www.dlibrary.go.kr/');
+                          launchUrl(uri);
                         },
                         child: const Padding(
                           padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 30.0),
@@ -290,8 +284,8 @@ class TabScreen2 extends StatelessWidget {
                       ),
                       child: InkWell(
                         onTap: () {
-                          // 자연 과학 계열 사이트로 이동하는 링크를 여기에 추가
-                          _launchURL('https://kossda.snu.ac.kr/');
+                          final uri = Uri.parse('https://kossda.snu.ac.kr/');
+                          launchUrl(uri);
                         },
                         child: const Padding(
                           padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 30.0),
@@ -326,8 +320,8 @@ class TabScreen2 extends StatelessWidget {
                       ),
                       child: InkWell(
                         onTap: () {
-                          // 자연 과학 계열 사이트로 이동하는 링크를 여기에 추가
-                          _launchURL('https://www.ksdcdb.kr/main.do');
+                          final uri = Uri.parse('https://www.ksdcdb.kr/main.do');
+                          launchUrl(uri);
                         },
                         child: const Padding(
                           padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 30.0),
@@ -362,8 +356,8 @@ class TabScreen2 extends StatelessWidget {
                       ),
                       child: InkWell(
                         onTap: () {
-                          // 자연 과학 계열 사이트로 이동하는 링크를 여기에 추가
-                          _launchURL('https://www.yescnc.com/home/main/');
+                          final uri = Uri.parse('https://www.yescnc.com/home/main/');
+                          launchUrl(uri);
                         },
                         child: const Padding(
                           padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 30.0),
@@ -398,8 +392,8 @@ class TabScreen2 extends StatelessWidget {
                       ),
                       child: InkWell(
                         onTap: () {
-                          // 자연 과학 계열 사이트로 이동하는 링크를 여기에 추가
-                          _launchURL('https://www.krpia.co.kr/');
+                          final uri = Uri.parse('https://www.krpia.co.kr/');
+                          launchUrl(uri);
                         },
                         child: const Padding(
                           padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 30.0),
@@ -453,8 +447,8 @@ class TabScreen2 extends StatelessWidget {
                       ),
                       child: InkWell(
                         onTap: () {
-                          // 자연 과학 계열 사이트로 이동하는 링크를 여기에 추가
-                          _launchURL('https://koreascience.kr/main.page');
+                          final uri = Uri.parse('https://koreascience.kr/main.page');
+                          launchUrl(uri);
                         },
                         child: const Padding(
                           padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 30.0),
@@ -489,8 +483,8 @@ class TabScreen2 extends StatelessWidget {
                       ),
                       child: InkWell(
                         onTap: () {
-                          // 자연 과학 계열 사이트로 이동하는 링크를 여기에 추가
-                          _launchURL('https://www.nature.com/');
+                          final uri = Uri.parse('https://www.nature.com/');
+                          launchUrl(uri);
                         },
                         child: const Padding(
                           padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 30.0),
@@ -525,8 +519,8 @@ class TabScreen2 extends StatelessWidget {
                       ),
                       child: InkWell(
                         onTap: () {
-                          // 자연 과학 계열 사이트로 이동하는 링크를 여기에 추가
-                          _launchURL('https://scienceon.kisti.re.kr/main/mainForm.do');
+                          final uri = Uri.parse('https://scienceon.kisti.re.kr/main/mainForm.do');
+                          launchUrl(uri);
                         },
                         child: const Padding(
                           padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 30.0),
@@ -561,8 +555,8 @@ class TabScreen2 extends StatelessWidget {
                       ),
                       child: InkWell(
                         onTap: () {
-                          // 자연 과학 계열 사이트로 이동하는 링크를 여기에 추가
-                          _launchURL('https://pubmed.ncbi.nlm.nih.gov/');
+                          final uri = Uri.parse('https://pubmed.ncbi.nlm.nih.gov/');
+                          launchUrl(uri);
                         },
                         child: const Padding(
                           padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 30.0),
